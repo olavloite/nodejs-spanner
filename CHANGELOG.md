@@ -4,6 +4,22 @@
 
 [1]: https://www.npmjs.com/package/nodejs-spanner?activeTab=versions
 
+## [4.4.0](https://www.github.com/googleapis/nodejs-spanner/compare/v4.3.0...v4.4.0) (2019-11-25)
+
+
+### Features
+
+* add plural and singular resource descriptor ([#737](https://www.github.com/googleapis/nodejs-spanner/issues/737)) ([11658bf](https://www.github.com/googleapis/nodejs-spanner/commit/11658bfae8467e6788bb492895e7afb9202c59f4))
+* add replica support ([#726](https://www.github.com/googleapis/nodejs-spanner/issues/726)) ([dea3e59](https://www.github.com/googleapis/nodejs-spanner/commit/dea3e599759f374773ed5e4180187e79f518a7b6))
+
+
+### Bug Fixes
+
+* changes to default rpc timeouts ([da066fc](https://www.github.com/googleapis/nodejs-spanner/commit/da066fc916df4468c5f7d0538aadc5677c5bdb33))
+* include long import in proto typescript declaration file ([#732](https://www.github.com/googleapis/nodejs-spanner/issues/732)) ([6fe0757](https://www.github.com/googleapis/nodejs-spanner/commit/6fe0757d659e7c0835fc8c40b4617c688ce69551))
+* **deps:** update dependency yargs to v15 ([#736](https://www.github.com/googleapis/nodejs-spanner/issues/736)) ([e289890](https://www.github.com/googleapis/nodejs-spanner/commit/e2898907511a3426c6c42204c80765716a3317a6))
+* **docs:** snippets are now replaced in jsdoc comments ([#731](https://www.github.com/googleapis/nodejs-spanner/issues/731)) ([843ce6f](https://www.github.com/googleapis/nodejs-spanner/commit/843ce6f1cf14f14ab05c9983f6f5b7a8428fa6c7))
+
 ## [4.3.0](https://www.github.com/googleapis/nodejs-spanner/compare/v4.2.0...v4.3.0) (2019-11-05)
 
 

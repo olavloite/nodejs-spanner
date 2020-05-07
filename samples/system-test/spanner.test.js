@@ -26,6 +26,7 @@ const crudCmd = `node crud.js`;
 const schemaCmd = `node schema.js`;
 const indexingCmd = `node indexing.js`;
 const queryOptionsCmd = `node queryoptions.js`;
+const queryModeCmd = `node querymode.js`;
 const transactionCmd = `node transaction.js`;
 const timestampCmd = `node timestamp.js`;
 const structCmd = `node struct.js`;
@@ -290,6 +291,18 @@ describe('Spanner', () => {
       output,
       /AlbumId: 2, AlbumTitle: Forever Hold your Peace, MarketingBudget:/
     );
+  });
+
+  // spanner_profile_query
+  it('should profile query', async () => {
+    const output = execSync(
+      `${queryModeCmd} profileQuery ${INSTANCE_ID} ${DATABASE_ID} ${PROJECT_ID}`
+    );
+    assert.match(
+      output,
+      /AlbumId: 2, AlbumTitle: Forever Hold your Peace, MarketingBudget:/
+    );
+    assert.match(output, /{"childLinks":/);
   });
 
   // read_only_transaction
